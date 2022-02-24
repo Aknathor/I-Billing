@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/fondo_inicio_sesion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b0000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="130dp">
+
+    <ImageView
+        android:id="@+id/icon_Ibilling_img"
+        android:layout_width="114dp"
+        android:layout_height="133dp"
+        app:srcCompat="@mipmap/i_billing_icon_recorte"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <EditText
+        android:id="@+id/editText_correo_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ccc"
+        android:textColorHint="#ccc"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ccc"
+        android:textColorHint="#ccc"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+        <Button
+            android:id="@+id/bt_crear_cuenta_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="30dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:onClick="irCrearCuenta"
+            android:text="Crear una cuenta"
+            android:textColor="#ccc" />
+
+        <Button
+            android:id="@+id/bt_inicio_sesion_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_color"
+            android:elevation="5dp"
+            android:text="INICIAR SESIÓN" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

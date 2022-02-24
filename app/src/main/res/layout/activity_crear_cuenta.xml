@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crear_cuenta"
+    android:background="@mipmap/fondo_inicio_sesion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b0000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="130dp">
+
+        <TextView
+            android:id="@+id/txtCuentaCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:text="Crear Cuenta"
+            android:textColor="#ccc"
+            android:textSize="24sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animacionCrear"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="sesion.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="true" />
+        <EditText
+            android:id="@+id/txtUsuarioCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:textColor="#ccc"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <EditText
+            android:id="@+id/txtNombreCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:textColor="#ccc"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <EditText
+            android:id="@+id/txtApellidoCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Apellidos"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:textColor="#ccc"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <EditText
+            android:id="@+id/txtRFCCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="RFC"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:textColor="#ccc"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <EditText
+            android:id="@+id/txtCorreoCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:textColor="#ccc"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="185dp" />
+
+        <EditText
+            android:id="@+id/txtContrasenaCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:textColor="#ccc"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <Button
+            android:id="@+id/btnTengoCuentaCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:onClick="irCrearMain"
+            android:text="Ya tengo una cuenta"
+            android:textColor="#ccc" />
+
+        <Button
+            android:id="@+id/btnCuentaCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_color"
+            android:elevation="10dp"
+            android:text="Crear cuenta" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
